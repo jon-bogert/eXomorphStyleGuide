@@ -145,9 +145,9 @@ Refer to *Callbacks (Actions & Delegates)* from the *C# Style Guide* on how to f
 
 ## Colliders as Triggers
 
-Do not use any collider components as Triggers. Instead use the `Physics.OverlapShape` family of methods. When calling these functions always provide a `LayerMask` to provide optimized detection. the `LayerMask` instance should be initialized to 0 in the script and a Debug.LogWarning should be called if not set.
+Do not use any collider components as Triggers. Instead use the `Physics.OverlapShape` family of methods. When calling these functions always provide a `LayerMask` to provide optimized detection. The `LayerMask` instance should be initialized to 0 in the script and a Debug.LogWarning should be called if not set.
 
-Debug draw these triggers via the OnGizmos method override and provide a `m_showBounds` boolean to toggle on and off (avoid `OnDrawGizmosSelected`).
+Debug draw these triggers via the OnDrawGizmos method override and provide a `m_showBounds` boolean to toggle on and off (avoid `OnDrawGizmosSelected`).
 
 ```cs
 public MyClass : MonoBehaviour
