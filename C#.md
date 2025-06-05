@@ -204,14 +204,14 @@ Vector2 squareMagnitude = (positionA.x * positionA.x)
 if (boxA.left < boxB.right
     && boxA.right > boxB.left
     && boxA.top > boxB.bottom
-    && boxA.bottom < boxB.top;)
+    && boxA.bottom < boxB.top)
 {
     boxA.OnCollision(boxB);
     boxB.OnCollision(boxA);
 }
 ```
 
-Standalone *boolean* equasions bust be wrapped in parenthesis.
+Standalone *boolean* equasions must be wrapped in parenthesis.
 
 ```cs
 public bool isEmpty
