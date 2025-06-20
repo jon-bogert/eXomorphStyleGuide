@@ -6,12 +6,10 @@ This document discribes orginization conventions and how C# code should be forma
 
 All Unity assets should have a suffix pertaining to what type of asset it is as follows "AssetName_TYP".
 
-C# Scripts do not have a suffix.
+C# Scripts, Prefabs, and Scenes do not need a suffix.
 
 |     Type|Description                 |
 |--------:|:---------------------------|
-|      PFB|Prefab                      |
-|      SCN|Scene                       |
 |     MESH|Mesh (FBX Format)           |
 |    BLEND|Blender mesh project file   |
 |      DIF|Diffuse Texture             |
